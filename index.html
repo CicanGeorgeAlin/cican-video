@@ -22,7 +22,7 @@ label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.12em
 section.info{padding:30px 0 80px;border-top:1px solid var(--line)}h2{font-size:25px}.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.card{border:1px solid var(--line);border-radius:15px;padding:20px;background:#050505}.card h3{margin-top:0}.card p{color:#999;line-height:1.65;font-size:14px}
 footer{border-top:1px solid var(--line);padding:25px 0 45px;color:#666;font-size:12px}
 @media(max-width:700px){.wrap{width:min(100% - 22px,1080px)}.hero{padding-top:48px}.grid,.cols{grid-template-columns:1fr}.studio{padding:14px;border-radius:17px}.actions{flex-direction:column}.generate,.reset{width:100%}.mark{letter-spacing:.07em}}
-</style>
+.toolbox-head{padding:4px 2px 22px}.eyebrow{font-size:11px;letter-spacing:.16em;color:#777;font-weight:800}.toolbox-head h2,.workflow h2{font-size:clamp(25px,5vw,38px);margin:9px 0 8px}.tool-lead{color:#999;line-height:1.65;max-width:720px;margin:0}.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tool-card{display:flex;flex-direction:column;min-height:180px;padding:18px;border:1px solid #242424;border-radius:16px;background:#050505;color:#fff;text-decoration:none;transition:.18s ease}.tool-card:hover{border-color:#666;transform:translateY(-2px)}.tool-card.featured{border-color:#444}.tool-icon{font-size:25px;margin-bottom:18px}.tool-name{font-weight:850;letter-spacing:.05em;font-size:14px}.tool-desc{color:#888;font-size:13px;line-height:1.5;margin-top:8px;flex:1}.tool-action{font-size:11px;letter-spacing:.12em;color:#fff;margin-top:14px}.workflow{margin-top:28px;padding:20px;border:1px solid #222;border-radius:16px;background:#060606}.steps{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.steps span{border:1px solid #292929;border-radius:999px;padding:7px 9px;color:#aaa;font-size:10px;letter-spacing:.08em}.studio-mini{margin-top:28px}.studio-mini .actions{align-items:stretch}.studio-mini .reset{display:flex;align-items:center;justify-content:center;text-decoration:none}.studio-mini .prompt{min-height:110px}@media(max-width:700px){.tool-grid{grid-template-columns:1fr 1fr}.tool-card{min-height:165px}.steps{gap:6px}}@media(max-width:460px){.tool-grid{grid-template-columns:1fr}.tool-card{min-height:145px}}</style>
 </head>
 <body>
 <div class="wrap">
@@ -35,72 +35,86 @@ footer{border-top:1px solid var(--line);padding:25px 0 45px;color:#666;font-size
 <p class="lead">Describe an idea. CICAN is being built as a free/open-source-first video creation platform — with the generation engine kept separate from this website.</p>
 </section>
 
-<section class="studio" aria-label="Video generator">
-<label for="prompt">Describe the video you want to create</label>
-<textarea id="prompt" class="prompt" maxlength="4000" placeholder="A cinematic sunrise over Vidraru Dam in Romania, realistic documentary photography, slow camera movement."></textarea>
+<section class="studio" aria-label="CICAN free AI toolbox">
+<div class="toolbox-head">
+  <div>
+    <div class="eyebrow">YOUR PERSONAL CREATOR TOOLBOX</div>
+    <h2>MAKE CONTENT. FREE-FIRST.</h2>
+    <p class="tool-lead">Use the best free tools already online. CICAN keeps them in one place so you can create videos, images, voice, scripts, captions and finished social posts from your phone.</p>
+  </div>
+</div>
 
+<div class="tool-grid">
+  <a class="tool-card featured" href="https://labs.google/fx/tools/flow" target="_blank" rel="noopener">
+    <span class="tool-icon">🎬</span><span class="tool-name">GOOGLE FLOW</span><span class="tool-desc">AI video generation with Google's video models.</span><span class="tool-action">OPEN →</span>
+  </a>
+  <a class="tool-card" href="https://huggingface.co/spaces?sort=trending" target="_blank" rel="noopener">
+    <span class="tool-icon">🧪</span><span class="tool-name">HUGGING FACE</span><span class="tool-desc">Explore free/open AI apps for video, image, voice and more.</span><span class="tool-action">EXPLORE →</span>
+  </a>
+  <a class="tool-card" href="https://designer.microsoft.com/" target="_blank" rel="noopener">
+    <span class="tool-icon">🖼️</span><span class="tool-name">MICROSOFT DESIGNER</span><span class="tool-desc">Create images, graphics, thumbnails and social designs.</span><span class="tool-action">OPEN →</span>
+  </a>
+  <a class="tool-card" href="https://elevenlabs.io/text-to-speech" target="_blank" rel="noopener">
+    <span class="tool-icon">🎙️</span><span class="tool-name">ELEVENLABS</span><span class="tool-desc">Turn scripts into natural-sounding voiceovers.</span><span class="tool-action">OPEN →</span>
+  </a>
+  <a class="tool-card" href="https://www.capcut.com/tools/ai-video-editor" target="_blank" rel="noopener">
+    <span class="tool-icon">✂️</span><span class="tool-name">CAPCUT</span><span class="tool-desc">Edit, caption, format and finish social-media videos.</span><span class="tool-action">OPEN →</span>
+  </a>
+  <a class="tool-card" href="https://gemini.google.com/" target="_blank" rel="noopener">
+    <span class="tool-icon">✍️</span><span class="tool-name">GEMINI</span><span class="tool-desc">Ideas, scripts, hooks, prompts, titles and descriptions.</span><span class="tool-action">OPEN →</span>
+  </a>
+</div>
+
+<div class="workflow">
+  <div class="eyebrow">CICAN SOCIAL FACTORY</div>
+  <h2>IDEA → POST</h2>
+  <div class="steps">
+    <span>01 IDEA</span><span>02 SCRIPT</span><span>03 VIDEO</span><span>04 VOICE</span><span>05 CAPTIONS</span><span>06 EDIT</span><span>07 POST</span>
+  </div>
+  <p class="note">Free tiers and quotas vary by provider. CICAN links to the current official tools rather than pretending any service is unlimited.</p>
+</div>
+
+<div class="studio-mini">
+<label for="prompt">CICAN PROMPT STARTER</label>
+<textarea id="prompt" class="prompt" maxlength="4000" placeholder="Example: Create an 8-second cinematic vertical video about Vidraru Dam at sunrise, mysterious and powerful, designed for TikTok."></textarea>
 <div class="grid">
-<div class="field"><label for="ratio">Aspect ratio</label><select id="ratio"><option value="16:9">16:9</option><option value="9:16">9:16</option><option value="1:1">1:1</option></select></div>
-<div class="field"><label for="duration">Duration</label><select id="duration"><option value="5">5 seconds</option></select></div>
-<div class="field"><label for="style">Style</label><select id="style"><option>Realistic</option><option>Cinematic</option><option>Documentary</option><option>Animation</option><option>Artistic</option></select></div>
+<div class="field"><label for="ratio">Format</label><select id="ratio"><option value="9:16">9:16 — TikTok / Reels / Shorts</option><option value="16:9">16:9 — YouTube</option><option value="1:1">1:1 — Square</option></select></div>
+<div class="field"><label for="duration">Length</label><select id="duration"><option value="8">8 seconds</option><option value="6">6 seconds</option><option value="5">5 seconds</option></select></div>
+<div class="field"><label for="style">Style</label><select id="style"><option>Cinematic</option><option>Realistic</option><option>Documentary</option><option>Animation</option><option>Artistic</option></select></div>
 </div>
-
-<div class="actions"><button class="generate" id="generate">GENERATE VIDEO</button><button class="reset" id="reset">RESET</button></div>
+<div class="actions"><button class="generate" id="copyPrompt" type="button">COPY PROMPT</button><a class="reset" href="https://labs.google/fx/tools/flow" target="_blank" rel="noopener">OPEN FLOW →</a></div>
 <div class="status" id="status" role="status"></div>
-
-<div class="output" id="output">
-<div class="video-frame"><video id="video" controls playsinline preload="metadata"></video></div>
-<a class="download" id="download" download="cican-video.mp4">DOWNLOAD MP4</a>
+<p class="note"><span class="pill">PHONE-FIRST</span><span class="pill">FREE-FIRST</span><span class="pill">OFFICIAL LINKS</span><br>Use the prompt starter here, then send it to the tool that fits the job.</p>
 </div>
-<p class="note"><span class="pill">NO PAID API REQUIRED</span><span class="pill">OPEN-SOURCE-FIRST</span><span class="pill">REAL ENGINE ONLY</span><br>Generation is unavailable until a real backend GPU provider is connected. CICAN never pretends a video was generated.</p>
 </section>
 
 <section class="info">
 <h2>Built for real generation</h2>
 <div class="cols">
-<div class="card"><h3>Text → Video</h3><p>The first milestone connects this interface to a real open-source video model. The frontend never contains secret keys or model credentials.</p></div>
-<div class="card"><h3>Provider-agnostic</h3><p>The backend will expose a stable API so the model can be replaced as better open-source video engines become practical.</p></div>
-<div class="card"><h3>Free-first</h3><p>Local and free/limited GPU execution are prioritized. Paid cloud compute can be an optional fallback, never the foundation.</p></div>
+<div class="card"><h3>One place</h3><p>Keep the free tools you actually use together instead of hunting for them every time you need to create something.</p></div>
+<div class="card"><h3>Social-first</h3><p>Start with the formats you need most: vertical video, short clips, voiceovers, captions, thumbnails and finished posts.</p></div>
+<div class="card"><h3>Own the workflow</h3><p>CICAN is the launcher and workflow layer. External providers can change without taking the project with them.</p></div>
 </div>
 </section>
 </main>
 
-<footer>CICAN VIDEO GENERATOR · V1.0 · Open-source-first video creation</footer>
+<footer>CICAN VIDEO · V1.1 · FREE AI TOOLBOX</footer>
 </div>
 <script>
-const API_BASE = ""; // Set to the deployed generation API when the GPU backend is connected.
 const $ = id => document.getElementById(id);
-function setStatus(message, error=false){$("status").innerHTML=message;$("status").classList.add("show");$("status").classList.toggle("error",error)}
-$("generate").addEventListener("click", async()=>{
- const prompt=$("prompt").value.trim();
- if(!prompt){setStatus("<strong>Enter a prompt first.</strong> Describe the video you want to create.",true);$("prompt").focus();return}
- if(!API_BASE){setStatus("<strong>Generation engine unavailable.</strong> The GitHub Pages interface is ready, but no real GPU backend is connected yet.",true);return}
- $("generate").disabled=true;
- try{
-   setStatus("<strong>Preparing...</strong>");
-   const res=await fetch(API_BASE+"/api/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({prompt,aspect_ratio:$("ratio").value,duration_seconds:Number($("duration").value),style:$("style").value})});
-   if(!res.ok) throw new Error("Generation request failed");
-   const job=await res.json();
-   if(!job.job_id) throw new Error("Invalid generation response");
-   setStatus("<strong>Generating...</strong>");
-   let done=false;
-   while(!done){
-     await new Promise(r=>setTimeout(r,2500));
-     const s=await fetch(API_BASE+"/api/status/"+encodeURIComponent(job.job_id));
-     if(!s.ok) throw new Error("Status request failed");
-     const data=await s.json();
-     if(data.status==="failed") throw new Error(data.message||"Generation failed");
-     if(data.status==="completed"){
-       const url=API_BASE+(data.video_url||"");
-       $("video").src=url;$("download").href=url;$("output").classList.add("show");
-       setStatus("<strong>Video ready.</strong>");
-       done=true;
-     } else setStatus("<strong>"+(data.message||"Generating...")+"</strong>");
-   }
- }catch(e){setStatus("<strong>Generation failed.</strong> "+e.message,true)}
- finally{$("generate").disabled=false}
+$("copyPrompt").addEventListener("click", async()=>{
+  const prompt=$("prompt").value.trim();
+  if(!prompt){$("status").innerHTML="<strong>Write your idea first.</strong>";$("status").classList.add("show");return}
+  const format=$("ratio").value, duration=$("duration").value, style=$("style").value;
+  const finalPrompt=prompt+"\\n\\nFormat: "+format+". Duration: "+duration+" seconds. Style: "+style+". Designed for social media.";
+  try{
+    await navigator.clipboard.writeText(finalPrompt);
+    $("status").innerHTML="<strong>Prompt copied.</strong> Open Google Flow and paste it.";
+  }catch(e){
+    $("status").innerHTML="<strong>Prompt ready.</strong> Copy the text manually, then open Google Flow.";
+  }
+  $("status").classList.add("show");
 });
-$("reset").addEventListener("click",()=>{ $("prompt").value=""; $("status").classList.remove("show"); $("output").classList.remove("show"); $("video").removeAttribute("src"); $("video").load(); });
 </script>
 </body>
 </html>
